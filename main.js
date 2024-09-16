@@ -1,3 +1,4 @@
+
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const nuvem = document.querySelector(".nuvem");
@@ -57,3 +58,8 @@ if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
 },10);
 
 document.addEventListener("keydown", jump);
+
+const restartGame = () => {
+
+  window.location.reload();
+}
